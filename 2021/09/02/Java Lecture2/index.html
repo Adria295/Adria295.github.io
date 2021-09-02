@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Java Lecture2Variables123456public class HelloWorld &amp;#123;		public static void main(String[] args) &amp;#123;				String message &#x3D; &quot;Hello World!&quot;;				System.out.println(message);		&amp;#125;&amp;#125;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java Lecture2">
+<meta property="og:url" content="http://example.com/2021/09/02/Java%20Lecture2/index.html">
+<meta property="og:site_name" content="William&#39;s Blog">
+<meta property="og:description" content="Java Lecture2Variables123456public class HelloWorld &amp;#123;		public static void main(String[] args) &amp;#123;				String message &#x3D; &quot;Hello World!&quot;;				System.out.println(message);		&amp;#125;&amp;#125;">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-09-02T12:00:16.000Z">
+<meta property="article:modified_time" content="2021-09-02T13:05:20.153Z">
+<meta property="article:author" content="William Bao">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Java Lecture2</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" "Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/Adria295">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post " href="/2021/09/02/Interfaces,%20generics,%20ArrayLists/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post " href="/2021/09/02/Objects%202/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/09/02/Java%20Lecture2/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/09/02/Java%20Lecture2/&text=Java Lecture2"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/09/02/Java%20Lecture2/&title=Java Lecture2"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/09/02/Java%20Lecture2/&is_video=false&description=Java Lecture2"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Java Lecture2&body=Check out this article: http://example.com/2021/09/02/Java%20Lecture2/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/09/02/Java%20Lecture2/&title=Java Lecture2"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/09/02/Java%20Lecture2/&title=Java Lecture2"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/09/02/Java%20Lecture2/&title=Java Lecture2"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/09/02/Java%20Lecture2/&title=Java Lecture2"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/09/02/Java%20Lecture2/&name=Java Lecture2&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/09/02/Java%20Lecture2/&t=Java Lecture2"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java-Lecture2"><span class="toc-number">1.</span> <span class="toc-text">Java Lecture2</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Variables"><span class="toc-number">1.1.</span> <span class="toc-text">Variables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Literals"><span class="toc-number">1.2.</span> <span class="toc-text">Literals</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mathematical"><span class="toc-number">1.3.</span> <span class="toc-text">Mathematical</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Casting%EF%BC%88%E5%AF%B9%E8%B1%A1%E8%BD%AC%E5%9E%8B%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">Casting（对象转型）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#String-manipulations"><span class="toc-number">1.5.</span> <span class="toc-text">String manipulations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Shortcut-commands"><span class="toc-number">1.6.</span> <span class="toc-text">Shortcut commands</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scope"><span class="toc-number">1.7.</span> <span class="toc-text">Scope</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Method"><span class="toc-number">1.8.</span> <span class="toc-text">Method</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#A-method-that-returns-values"><span class="toc-number">1.8.1.</span> <span class="toc-text">A method that returns values</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Exercise"><span class="toc-number">1.8.2.</span> <span class="toc-text">Exercise</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scope-amp-passing-variables-to-methods"><span class="toc-number">1.9.</span> <span class="toc-text">Scope &amp; passing variables to methods</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Compound-Statements-and-Scope"><span class="toc-number">1.10.</span> <span class="toc-text">Compound Statements and Scope</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Methods-overloading"><span class="toc-number">1.11.</span> <span class="toc-text">Methods: overloading</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Stopping-a-program"><span class="toc-number">1.12.</span> <span class="toc-text">Stopping a program</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Java Lecture2
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">William Bao</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2021-09-02T12:00:16.000Z" itemprop="datePublished">2021-09-02</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="Java-Lecture2"><a href="#Java-Lecture2" class="headerlink" title="Java Lecture2"></a>Java Lecture2</h1><h2 id="Variables"><a href="#Variables" class="headerlink" title="Variables"></a>Variables</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">				String message = <span class="string">&quot;Hello World!&quot;</span>;</span><br><span class="line">				System.out.println(message);</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ol>
+<li>The data is stored somewhere in the computer’s RAM (random access memory)</li>
+<li>Java convention says variable names start with a lower case letter</li>
+<li>Variable names cannot start with numbers or “or”</li>
+</ol>
+<hr>
+<h2 id="Literals"><a href="#Literals" class="headerlink" title="Literals"></a>Literals</h2><ol>
+<li><code>字面常量(literal)</code>是用于表达源代码中一个固定值的表示法</li>
+<li>种类包括int / double / String / char</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> number = <span class="number">666</span>;</span><br><span class="line">String phrase = <span class="string">&quot;Hello World!&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>上述代码，int / String 是标识符(identifier)，因为它们都是用于标识该程序中的变量、类。</p>
+<p>而666 / “Hello World!”是字面常量(Literals)，，因为它们都是在程序中直接以值的形式来操作和表现。</p>
+<hr>
+<h2 id="Mathematical"><a href="#Mathematical" class="headerlink" title="Mathematical"></a>Mathematical</h2><ol>
+<li>Operations involving an int and a double will result in a double</li>
+<li>1.0*a effectively converts a int into a double and then the division is done as a double division</li>
+</ol>
+<hr>
+<h2 id="Casting（对象转型）"><a href="#Casting（对象转型）" class="headerlink" title="Casting（对象转型）"></a>Casting（对象转型）</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Casting</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> a = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">double</span> b = a;  <span class="comment">// the same as...</span></span><br><span class="line">b = (<span class="keyword">double</span>)a; <span class="comment">// ...this</span></span><br><span class="line"><span class="keyword">double</span> c = <span class="number">3.6</span>;</span><br><span class="line"><span class="keyword">int</span> d = (<span class="keyword">int</span>)c; <span class="comment">// d = 3</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="String-manipulations"><a href="#String-manipulations" class="headerlink" title="String manipulations"></a>String manipulations</h2><ol>
+<li>We can also use + with Strings to <strong>concatenate</strong> them </li>
+<li>We can also concatenate String with other variables:</li>
+</ol>
+<hr>
+<h2 id="Shortcut-commands"><a href="#Shortcut-commands" class="headerlink" title="Shortcut commands"></a>Shortcut commands</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Shortcuts</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> x = <span class="number">0</span>;</span><br><span class="line">x += <span class="number">1</span>; <span class="comment">// same as x = x + 1;</span></span><br><span class="line">x += <span class="number">100</span>; <span class="comment">// same as x = x + 100;</span></span><br><span class="line">x -= <span class="number">5</span>; <span class="comment">// x = x - 5;</span></span><br><span class="line">x *= <span class="number">3</span>; <span class="comment">// x = x * 3;</span></span><br><span class="line"><span class="keyword">int</span> a = <span class="number">4</span>;</span><br><span class="line">x /= a; <span class="comment">// x = x / a;</span></span><br><span class="line">x ++ ; <span class="comment">// x = x + 1 (after this line)</span></span><br><span class="line">++ x; <span class="comment">// x = x + 1 (before this line)</span></span><br><span class="line"><span class="comment">// clearer with an example e.g.</span></span><br><span class="line"><span class="keyword">int</span> y = <span class="number">5</span>;</span><br><span class="line">System.out.println(y++); <span class="comment">// 5..print then increase</span></span><br><span class="line">System.out.println(y); <span class="comment">// 6;</span></span><br><span class="line">System.out.println(++y); <span class="comment">// 7..increase then print</span></span><br><span class="line">String message = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">message += <span class="string">&quot; &quot;</span>; <span class="comment">// &quot;Hello &quot;</span></span><br><span class="line">message += <span class="string">&quot; World!&quot;</span>; <span class="comment">//&quot;Hello World!&quot;	</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h2 id="Scope"><a href="#Scope" class="headerlink" title="Scope"></a>Scope</h2><ol>
+<li>Although you can re-assign a value to a variable, you cannot define a variable with the same <strong>name</strong> twice in the same <strong>scope</strong> (even if it’s a different type).</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ScopeExample</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> a = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> a = <span class="number">6</span>; <span class="comment">//Error</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">adding</span><span class="params">(<span class="keyword">int</span> firstNumber, <span class="keyword">int</span> secondNumber)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> result = firstNumber + secondNumber;</span><br><span class="line">System.out.println(firstNumber + <span class="string">&quot; + &quot;</span> + secondNumber + <span class="string">&quot; = &quot;</span> + result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Note that we have to declare what <strong>type</strong> the things are that we <strong>pass</strong> to the method (in this case, two ints)</li>
+</ol>
+<h3 id="A-method-that-returns-values"><a href="#A-method-that-returns-values" class="headerlink" title="A method that returns values"></a>A method that returns values</h3><ol>
+<li>不在method里直接print结果，而是返回计算的结果</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Adding</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">addingMethod</span><span class="params">(<span class="keyword">int</span> firstNumber, <span class="keyword">int</span> secondNumber)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> result = firstNumber + secondNumber;</span><br><span class="line"><span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> a = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">int</span> b = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">int</span> c = <span class="number">6</span>;</span><br><span class="line"><span class="keyword">int</span> d = <span class="number">21</span>;		</span><br><span class="line"><span class="keyword">int</span> aPlusb = addingMethod(a,b);</span><br><span class="line">System.out.println(a + <span class="string">&quot; + &quot;</span> + b + <span class="string">&quot; = &quot;</span> + aPlusb);</span><br><span class="line">System.out.println(c + <span class="string">&quot; + &quot;</span> + d + <span class="string">&quot; = &quot;</span> + addingMethod(c,d));</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Exercise"><a href="#Exercise" class="headerlink" title="Exercise"></a>Exercise</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Area</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">computeArea</span><span class="params">(<span class="keyword">double</span> myRadius)</span> </span>&#123;</span><br><span class="line"><span class="keyword">double</span> pi = <span class="number">3.14152</span>;</span><br><span class="line"><span class="keyword">double</span> myArea = pi * myRadius * myRadius;</span><br><span class="line"><span class="keyword">return</span> myArea;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">double</span> radius = <span class="number">5.4</span>;</span><br><span class="line"><span class="keyword">double</span> area = computeArea(radius);</span><br><span class="line">System.out.println(<span class="string">&quot;The area of a circle with radius &quot;</span> + </span><br><span class="line">radius + <span class="string">&quot; equals &quot;</span> + area);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Scope-amp-passing-variables-to-methods"><a href="#Scope-amp-passing-variables-to-methods" class="headerlink" title="Scope &amp; passing variables to methods"></a>Scope &amp; passing variables to methods</h2><ol>
+<li><p>Variables declared in one method are <strong>not visible</strong> to other methods.</p>
+</li>
+<li><p>When we call computeArea from main menu and pass some data to computeArea:</p>
+<blockquote>
+<p>computeArea creates its <strong>own variables</strong> and sets them to the values it is passed from main.</p>
+<p>the variables in computeArea <strong>can have the same name</strong> as those in main <strong>but they are different</strong> variables.</p>
+<p><strong>This is very important!</strong></p>
+<p>We say that main and computeArea are not in the same <strong>scope</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<h2 id="Compound-Statements-and-Scope"><a href="#Compound-Statements-and-Scope" class="headerlink" title="Compound Statements and Scope"></a>Compound Statements and Scope</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Compound</span> </span>&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">			<span class="keyword">int</span> b = <span class="number">5</span>;</span><br><span class="line">			&#123;</span><br><span class="line">        <span class="comment">// this is a compound statement inside main</span></span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">3</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;a = &quot;</span> + a); <span class="comment">//OK</span></span><br><span class="line">				System.out.println(<span class="string">&quot;b = &quot;</span> + b);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println(<span class="string">&quot;Here, a = &quot;</span> + a);  <span class="comment">// NOT OK</span></span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>A variable is <strong>visible</strong> in the block in which it is defined, <strong>and</strong> any blocks <strong>within that</strong>.</li>
+<li>Outside the block it is invisible.</li>
+</ul>
+<hr>
+<h2 id="Methods-overloading"><a href="#Methods-overloading" class="headerlink" title="Methods: overloading"></a>Methods: <strong>overloading</strong></h2><ul>
+<li>The <strong>Signature</strong> of a method consists of its name and argument list</li>
+<li>Java allows us to have methods with the same <strong>name</strong> but different arguments.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">rectangleArea</span><span class="params">(<span class="keyword">double</span> width, <span class="keyword">double</span> height)</span> </span>&#123;</span><br><span class="line"><span class="keyword">return</span> width * height;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">rectangleArea</span><span class="params">(<span class="keyword">double</span> width)</span> </span>&#123;</span><br><span class="line"><span class="keyword">return</span> width * width; <span class="comment">// e.g. for a square</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// or, better...</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">rectangleArea</span><span class="params">(<span class="keyword">double</span> width)</span> </span>&#123;</span><br><span class="line"><span class="keyword">return</span> rectangleArea(width,width);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Stopping-a-program"><a href="#Stopping-a-program" class="headerlink" title="Stopping a program"></a>Stopping a program</h2><ul>
+<li><p>System.exit(int n)</p>
+</li>
+<li><p>Calling this method, terminates your program.</p>
+</li>
+<li><p>The value n is passed back to whatever started your program and the normal convention is:</p>
+</li>
+<li><p>N = 0; // successful termination – the program did what it wanted to do</p>
+</li>
+<li><p>N = -1; N = 1; // or any other number that isn’t 0: unsuccessful terminatione</p>
+</li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/Adria295">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java-Lecture2"><span class="toc-number">1.</span> <span class="toc-text">Java Lecture2</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Variables"><span class="toc-number">1.1.</span> <span class="toc-text">Variables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Literals"><span class="toc-number">1.2.</span> <span class="toc-text">Literals</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mathematical"><span class="toc-number">1.3.</span> <span class="toc-text">Mathematical</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Casting%EF%BC%88%E5%AF%B9%E8%B1%A1%E8%BD%AC%E5%9E%8B%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">Casting（对象转型）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#String-manipulations"><span class="toc-number">1.5.</span> <span class="toc-text">String manipulations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Shortcut-commands"><span class="toc-number">1.6.</span> <span class="toc-text">Shortcut commands</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scope"><span class="toc-number">1.7.</span> <span class="toc-text">Scope</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Method"><span class="toc-number">1.8.</span> <span class="toc-text">Method</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#A-method-that-returns-values"><span class="toc-number">1.8.1.</span> <span class="toc-text">A method that returns values</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Exercise"><span class="toc-number">1.8.2.</span> <span class="toc-text">Exercise</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scope-amp-passing-variables-to-methods"><span class="toc-number">1.9.</span> <span class="toc-text">Scope &amp; passing variables to methods</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Compound-Statements-and-Scope"><span class="toc-number">1.10.</span> <span class="toc-text">Compound Statements and Scope</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Methods-overloading"><span class="toc-number">1.11.</span> <span class="toc-text">Methods: overloading</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Stopping-a-program"><span class="toc-number">1.12.</span> <span class="toc-text">Stopping a program</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/09/02/Java%20Lecture2/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/09/02/Java%20Lecture2/&text=Java Lecture2"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/09/02/Java%20Lecture2/&title=Java Lecture2"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/09/02/Java%20Lecture2/&is_video=false&description=Java Lecture2"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Java Lecture2&body=Check out this article: http://example.com/2021/09/02/Java%20Lecture2/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/09/02/Java%20Lecture2/&title=Java Lecture2"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/09/02/Java%20Lecture2/&title=Java Lecture2"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/09/02/Java%20Lecture2/&title=Java Lecture2"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/09/02/Java%20Lecture2/&title=Java Lecture2"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/09/02/Java%20Lecture2/&name=Java Lecture2&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/09/02/Java%20Lecture2/&t=Java Lecture2"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2021
+    William Bao
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/Adria295">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>

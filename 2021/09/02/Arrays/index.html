@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="ArraysPrimitive(原始数据类型)，有八种，包括：boolean、char、byte、short、int、long、float、double。 Creating Arrays1int[] myIntArray &#x3D; new int[6];   Accessing and assigning individual elements1234567myIntArray[0] &#x3D; 4;myInt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Arrays">
+<meta property="og:url" content="http://example.com/2021/09/02/Arrays/index.html">
+<meta property="og:site_name" content="William&#39;s Blog">
+<meta property="og:description" content="ArraysPrimitive(原始数据类型)，有八种，包括：boolean、char、byte、short、int、long、float、double。 Creating Arrays1int[] myIntArray &#x3D; new int[6];   Accessing and assigning individual elements1234567myIntArray[0] &#x3D; 4;myInt">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-09-02T12:00:16.000Z">
+<meta property="article:modified_time" content="2021-09-02T13:05:34.168Z">
+<meta property="article:author" content="William Bao">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Arrays</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" "Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/Adria295">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post " href="/2021/09/02/ADS/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post " href="/2021/09/02/AP/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/09/02/Arrays/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/09/02/Arrays/&text=Arrays"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/09/02/Arrays/&title=Arrays"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/09/02/Arrays/&is_video=false&description=Arrays"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Arrays&body=Check out this article: http://example.com/2021/09/02/Arrays/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/09/02/Arrays/&title=Arrays"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/09/02/Arrays/&title=Arrays"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/09/02/Arrays/&title=Arrays"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/09/02/Arrays/&title=Arrays"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/09/02/Arrays/&name=Arrays&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/09/02/Arrays/&t=Arrays"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Arrays"><span class="toc-number">1.</span> <span class="toc-text">Arrays</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-Arrays"><span class="toc-number">1.1.</span> <span class="toc-text">Creating Arrays</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Accessing-and-assigning-individual-elements"><span class="toc-number">1.2.</span> <span class="toc-text">Accessing and assigning individual elements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arrays-are-objects"><span class="toc-number">1.3.</span> <span class="toc-text">Arrays are objects</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Assigning-values-to-the-whole-array"><span class="toc-number">1.4.</span> <span class="toc-text">Assigning values to the whole array</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Using-a-loop-to-assign-values"><span class="toc-number">1.5.</span> <span class="toc-text">Using a loop to assign values</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Using-a-loop-to-print-values"><span class="toc-number">1.6.</span> <span class="toc-text">Using a loop to print values</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Making-arrays-bigger"><span class="toc-number">1.7.</span> <span class="toc-text">Making arrays bigger</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arrays-of-objects"><span class="toc-number">1.8.</span> <span class="toc-text">Arrays of objects</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Populating-object-arrays%EF%BC%88%E5%A1%AB%E5%85%85%EF%BC%89"><span class="toc-number">1.9.</span> <span class="toc-text">Populating object arrays（填充）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arrays-with-more-than-one-dimension"><span class="toc-number">1.10.</span> <span class="toc-text">Arrays with more than one dimension</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bubble-sort"><span class="toc-number">1.11.</span> <span class="toc-text">bubble sort</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#problem-with-linked-arrays"><span class="toc-number">1.12.</span> <span class="toc-text">problem with linked arrays</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Interfaces"><span class="toc-number">1.13.</span> <span class="toc-text">Interfaces</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-do-we-tell-Java-how-to-compare-our-objects"><span class="toc-number">1.14.</span> <span class="toc-text">How do we tell Java how to compare our objects?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary"><span class="toc-number">1.15.</span> <span class="toc-text">Summary</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Arrays
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">William Bao</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2021-09-02T12:00:16.000Z" itemprop="datePublished">2021-09-02</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h1><p>Primitive(原始数据类型)，有八种，包括：boolean、char、byte、short、int、long、float、double。</p>
+<h2 id="Creating-Arrays"><a href="#Creating-Arrays" class="headerlink" title="Creating Arrays"></a>Creating Arrays</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] myIntArray = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">6</span>];</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Accessing-and-assigning-individual-elements"><a href="#Accessing-and-assigning-individual-elements" class="headerlink" title="Accessing and assigning individual elements"></a>Accessing and assigning individual elements</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">myIntArray[<span class="number">0</span>] = <span class="number">4</span>;</span><br><span class="line">myIntArray[<span class="number">5</span>] = <span class="number">3</span>;</span><br><span class="line"><span class="comment">// or the ith</span></span><br><span class="line"><span class="keyword">int</span> i = <span class="number">2</span>;</span><br><span class="line">myIntArray[i] = <span class="number">17</span>;</span><br><span class="line"><span class="comment">// and access the 1st</span></span><br><span class="line">System.out.println(myIntArray[<span class="number">1</span>]);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Individual elements (e.g. myIntArray[2]) can be treated exactly as normal primitive variables</li>
+</ul>
+<hr>
+<h2 id="Arrays-are-objects"><a href="#Arrays-are-objects" class="headerlink" title="Arrays are objects"></a>Arrays are objects</h2><ul>
+<li>Therefore myIntArray is a <strong>reference</strong></li>
+</ul>
+<hr>
+<h2 id="Assigning-values-to-the-whole-array"><a href="#Assigning-values-to-the-whole-array" class="headerlink" title="Assigning values to the whole array"></a>Assigning values to the whole array</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] myIntArray = &#123;<span class="number">4</span>,<span class="number">2</span>,<span class="number">17</span>,<span class="number">8</span>,-<span class="number">6</span>,<span class="number">3</span>&#125;;</span><br><span class="line">System.out.println(myIntArray[<span class="number">3</span>]); <span class="comment">// 8</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Only works at initialisation!</li>
+</ul>
+<hr>
+<h2 id="Using-a-loop-to-assign-values"><a href="#Using-a-loop-to-assign-values" class="headerlink" title="Using a loop to assign values"></a>Using a loop to assign values</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] myIntArray = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;myIntArray.length;i++) &#123;</span><br><span class="line">myIntArray[i] = <span class="number">2</span>*i;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Using-a-loop-to-print-values"><a href="#Using-a-loop-to-print-values" class="headerlink" title="Using a loop to print values"></a>Using a loop to print values</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;myIntArray.length;i++) &#123;</span><br><span class="line">String output = String.format(<span class="string">&quot;Element %d = %d&quot;</span>,i,myIntArray[i]);</span><br><span class="line">System.out.println(output);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Making-arrays-bigger"><a href="#Making-arrays-bigger" class="headerlink" title="Making arrays bigger"></a>Making arrays bigger</h2><ul>
+<li><p>What if we subsequently need to make it bigger?</p>
+</li>
+<li><p>We can’t!</p>
+</li>
+<li><p>Instead:</p>
+<ul>
+<li>We make a new, bigger array</li>
+<li>Copy the things from the old one to the new one</li>
+<li>Redirect the original reference</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myArray[pos++] = a; <span class="comment">//先myArray[pos] = a  后pos++</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Arrays-of-objects"><a href="#Arrays-of-objects" class="headerlink" title="Arrays of objects"></a>Arrays of objects</h2><ul>
+<li><p>We don’t have arrays of objects</p>
+</li>
+<li><p>We have arrays of <strong>references to objects</strong></p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Person[] personArray = <span class="keyword">new</span> Person[<span class="number">4</span>];</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Initially, references are empty</li>
+<li>int array里初始是0</li>
+</ul>
+<hr>
+<h2 id="Populating-object-arrays（填充）"><a href="#Populating-object-arrays（填充）" class="headerlink" title="Populating object arrays（填充）"></a>Populating object arrays（填充）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">personArray[0] = new Person(&quot;Bill&quot;,56); //方法一 Object</span><br><span class="line"></span><br><span class="line">Person aPerson = new Person(&quot;Amy&quot;,76); //方法二 Reference</span><br><span class="line">personArray[1] = aPerson;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Arrays-with-more-than-one-dimension"><a href="#Arrays-with-more-than-one-dimension" class="headerlink" title="Arrays with more than one dimension"></a>Arrays with more than one dimension</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] table = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>][<span class="number">4</span>];</span><br><span class="line">table[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">3</span>;</span><br><span class="line">table[<span class="number">2</span>][<span class="number">1</span>] = <span class="number">4</span>;</span><br><span class="line">System.out.println(table[<span class="number">1</span>][<span class="number">3</span>]); <span class="comment">// 0</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>Example:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] table = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>][<span class="number">4</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++) &#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">4</span>;j++) &#123;</span><br><span class="line">table[i][j] = i + j;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>This means that the type of e.g. table[0] is int[]</li>
+<li>理解为tabel为一个长度3的array，每一个都指向另一个长度为4的array</li>
+<li>可以单拿出第一行tabel[0]作为一个int[]来调用方法</li>
+</ul>
+<hr>
+<h2 id="bubble-sort"><a href="#bubble-sort" class="headerlink" title="bubble sort"></a><strong>bubble sort</strong></h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">boolean</span> anyChanged=<span class="keyword">true</span>;</span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">anyChanged = <span class="keyword">false</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length-<span class="number">1</span>;i++) &#123;        </span><br><span class="line"><span class="keyword">if</span>(a[i]&gt;a[i+<span class="number">1</span>]) &#123;</span><br><span class="line">anyChanged = <span class="keyword">true</span>;</span><br><span class="line"><span class="keyword">int</span> temp = a[i];</span><br><span class="line">a[i] = a[i+<span class="number">1</span>];</span><br><span class="line">a[i+<span class="number">1</span>] = temp;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;<span class="keyword">while</span>(anyChanged);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="problem-with-linked-arrays"><a href="#problem-with-linked-arrays" class="headerlink" title="problem with linked arrays"></a>problem with <strong>linked</strong> arrays</h2><ul>
+<li><p>Two solutions</p>
+<ol>
+<li><p>Rewrite our sorting function to reorder the names too (next slide)</p>
+</li>
+<li><p>Make an object for each student (containing name and grade) and then create an array of these objects - this is the object oriented solution (and, I think, the neatest)(Better!!!)</p>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="Interfaces"><a href="#Interfaces" class="headerlink" title="Interfaces"></a>Interfaces</h2><ul>
+<li>Java has a method called Arrays.sort (in java.utils.Arrays)</li>
+<li>It knows how to compare its own primitives and objects already</li>
+</ul>
+<h2 id="How-do-we-tell-Java-how-to-compare-our-objects"><a href="#How-do-we-tell-Java-how-to-compare-our-objects" class="headerlink" title="How do we tell Java how to compare our objects?"></a>How do we tell Java how to compare our objects?</h2><ul>
+<li><p>An Interface defines a set of methods</p>
+</li>
+<li><p>If a class <strong>implements</strong> an interface, it must implement the methods in the interface</p>
+</li>
+<li><p>One such interface is Comparable which includes a single method compareTo</p>
+</li>
+<li><p>If a class implements Comparable, we can use Arrays.sort</p>
+<ul>
+<li>I.e. Java knows that our class will have a compareTo method, and this is what Arrays.sort uses.</li>
+</ul>
+</li>
+</ul>
+<p>●Compare with the fact that our sort method didn’t care about anything in the Student class except that it had a getGrade() method.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> <span class="keyword">implements</span> <span class="title">Comparable</span></span>&#123;  </span><br><span class="line">  <span class="comment">//We use implements to tell that this class implements the Comparable interface. </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">int</span> grade;</span><br><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String n,<span class="keyword">int</span> g)</span> </span>&#123;</span><br><span class="line">name = n;</span><br><span class="line">grade = g;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getGrade</span><span class="params">()</span> </span>&#123;<span class="keyword">return</span> grade;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compareTo</span><span class="params">(Object o)</span> </span>&#123;  </span><br><span class="line">  <span class="comment">//We write our own compareTo method which takes the object to be compared with as an argument.</span></span><br><span class="line"><span class="keyword">if</span>(o <span class="keyword">instanceof</span> Student) &#123; <span class="comment">// 判断o是否是Student类或子类</span></span><br><span class="line">Student other = (Student)o; <span class="comment">//小转大需要cast</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">this</span>.getGrade() &gt; other.getGrade()) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">this</span>.getGrade() &lt; other.getGrade())</span><br><span class="line"><span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><ul>
+<li><p>Try and avoid paired arrays</p>
+<ul>
+<li>It will almost certainly lead to errors</li>
+</ul>
+</li>
+<li><p>If you are faced with a problem that you think requires paired arrays, it is almost certainly better to make your own class</p>
+</li>
+<li><p>Arrays of your own class can be sorted using Java’s Arrays.sort() method as long as your class implements the Comparable interface.</p>
+<ul>
+<li>Which allows Java to compare two of your objects, and decide which is bigger, and which is smaller, and therefore sort them.</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/Adria295">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Arrays"><span class="toc-number">1.</span> <span class="toc-text">Arrays</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-Arrays"><span class="toc-number">1.1.</span> <span class="toc-text">Creating Arrays</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Accessing-and-assigning-individual-elements"><span class="toc-number">1.2.</span> <span class="toc-text">Accessing and assigning individual elements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arrays-are-objects"><span class="toc-number">1.3.</span> <span class="toc-text">Arrays are objects</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Assigning-values-to-the-whole-array"><span class="toc-number">1.4.</span> <span class="toc-text">Assigning values to the whole array</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Using-a-loop-to-assign-values"><span class="toc-number">1.5.</span> <span class="toc-text">Using a loop to assign values</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Using-a-loop-to-print-values"><span class="toc-number">1.6.</span> <span class="toc-text">Using a loop to print values</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Making-arrays-bigger"><span class="toc-number">1.7.</span> <span class="toc-text">Making arrays bigger</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arrays-of-objects"><span class="toc-number">1.8.</span> <span class="toc-text">Arrays of objects</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Populating-object-arrays%EF%BC%88%E5%A1%AB%E5%85%85%EF%BC%89"><span class="toc-number">1.9.</span> <span class="toc-text">Populating object arrays（填充）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arrays-with-more-than-one-dimension"><span class="toc-number">1.10.</span> <span class="toc-text">Arrays with more than one dimension</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bubble-sort"><span class="toc-number">1.11.</span> <span class="toc-text">bubble sort</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#problem-with-linked-arrays"><span class="toc-number">1.12.</span> <span class="toc-text">problem with linked arrays</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Interfaces"><span class="toc-number">1.13.</span> <span class="toc-text">Interfaces</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-do-we-tell-Java-how-to-compare-our-objects"><span class="toc-number">1.14.</span> <span class="toc-text">How do we tell Java how to compare our objects?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary"><span class="toc-number">1.15.</span> <span class="toc-text">Summary</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/09/02/Arrays/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/09/02/Arrays/&text=Arrays"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/09/02/Arrays/&title=Arrays"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/09/02/Arrays/&is_video=false&description=Arrays"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Arrays&body=Check out this article: http://example.com/2021/09/02/Arrays/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/09/02/Arrays/&title=Arrays"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/09/02/Arrays/&title=Arrays"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/09/02/Arrays/&title=Arrays"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/09/02/Arrays/&title=Arrays"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/09/02/Arrays/&name=Arrays&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/09/02/Arrays/&t=Arrays"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2021
+    William Bao
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/Adria295">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
