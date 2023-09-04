@@ -1,3 +1,11 @@
+---
+layout:     post
+date:       20230904
+author:     "Adira"
+tags:
+- Notes
+---
+
 # VXLAN学习笔记
 
 ## VXLAN概念：
@@ -28,7 +36,7 @@ VXLAN使用隧道技术让多个二层网络实现通信，在原有报文的基
 
 可以满足虚机动态迁移（在保证虚拟机上服务正常运行的同时，将一个虚拟机系统从一个物理服务器移动到另一个物理服务器的过程）时对网络的要求，因为迁移表现为从一个端口到另一个端口，IP地址保持不变。
 
-![image-20230213111604503](C:\Users\鲍文澜\AppData\Roaming\Typora\typora-user-images\image-20230213111604503.png)
+![image-20230213111604503](/img/in-post/image-20230213111604503.png)
 
 
 
